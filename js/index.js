@@ -90,6 +90,11 @@ const app = createApp({
         })
         .catch((err) => {});
     },
+    /**
+     * 修改商品資料互動視窗
+     * @param { string } status create、edit、delete
+     * @param { object } product 商品資料
+     */
     openModal(status, product) {
       productModal.show();
 
@@ -114,9 +119,6 @@ const app = createApp({
     },
     closeModal() {
       productModal.hide();
-    },
-    closeDeleteModal() {
-      delProductModal.hide();
     },
   },
   mounted() {
